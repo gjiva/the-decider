@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.argint.android.thedecider"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/decider"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.argint.android.thedecider.activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.argint.android.thedecider.activities.CriteriaEntryActivity"
+            android:label="@string/title_activity_criteria_entry"
+            android:parentActivityName="com.argint.android.thedecider.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.argint.android.thedecider.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.argint.android.thedecider.activities.OptionsEntryActivity"
+            android:label="@string/title_activity_options_entry"
+            android:parentActivityName="com.argint.android.thedecider.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.argint.android.thedecider.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.argint.android.thedecider.activities.CriteriaWeightingActivity"
+            android:label="@string/title_activity_criteria_weighting"
+            android:parentActivityName="com.argint.android.thedecider.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.argint.android.thedecider.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.argint.android.thedecider.activities.CriteriaWeightDisplayActivity"
+            android:label="@string/title_activity_criteria_weight_display"
+            android:parentActivityName="com.argint.android.thedecider.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.argint.android.thedecider.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.argint.android.thedecider.activities.OptionRatingActivity"
+            android:label="@string/title_activity_option_rating"
+            android:parentActivityName="com.argint.android.thedecider.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.argint.android.thedecider.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.argint.android.thedecider.activities.OptionGradesDisplayActivity"
+            android:label="@string/title_activity_option_grades_display"
+            android:parentActivityName="com.argint.android.thedecider.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.argint.android.thedecider.activities.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
