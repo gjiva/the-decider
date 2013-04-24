@@ -1,0 +1,1 @@
+- Re-order Option Entry Activity to be first, and add a "random" checkbox to it that will pick an option at random and skip to the end
